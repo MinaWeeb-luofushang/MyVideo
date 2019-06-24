@@ -7,41 +7,57 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="1"></LinearLayout>
+        android:layout_weight="1"/>
 
 
 
 
     <FrameLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/fl_main_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="8"></FrameLayout>
-
-
-
+        android:layout_weight="8"/>
 
     <RadioGroup
+        android:id="@+id/rg_main_tg"
         android:background="#11000000"
         android:layout_width="match_parent"
+        android:padding="3dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/rb_video"
+            android:id="@+id/rb_video_home_tv"
             android:textColor="@drawable/rb_video_text_selector"
             android:drawableTop="@drawable/rb_video_drawable_selector"
-            android:layout_width="wrap_content"
-            android:gravity="center"
-            android:layout_height="wrap_content"
-            android:drawablePadding="3dp"
-            android:button="@android:color/transparent"
-            android:textSize="10sp"
-            android:text="本地视频"
+            style="@style/RadioButton_Mystyle"
+            android:text="HOME"
             android:layout_weight="1"/>
 
+        <RadioButton
+            android:id="@+id/rb_video_tv"
+            android:textColor="@drawable/rb_video_text_selector"
+            android:drawableTop="@drawable/rb_video_drawable_tv_selector"
+            style="@style/RadioButton_Mystyle"
+            android:text="IPHONETV"
+            android:layout_weight="1"/>
 
+        <RadioButton
+            android:id="@+id/rb_video_internet"
+            android:textColor="@drawable/rb_video_text_selector"
+            android:drawableTop="@drawable/rb_video_drawable_internet_selector"
+            style="@style/RadioButton_Mystyle"
+            android:text="INTERNET"
+            android:layout_weight="1"/>
 
-
+        <RadioButton
+            android:id="@+id/rb_video_myself"
+            android:textColor="@drawable/rb_video_text_selector"
+            android:drawableTop="@drawable/rb_video_drawable_myself_selector"
+            style="@style/RadioButton_Mystyle"
+            android:text="MYSELF"
+            android:layout_weight="1"/>
 
     </RadioGroup>
+
 </LinearLayout>
